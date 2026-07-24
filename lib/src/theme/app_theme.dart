@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'app_colors.dart';
+import 'app_typography.dart';
+import 'app_spacing.dart';
 
 abstract class BaseTheme {
   late Color primary; late Color primary60; late Color primary45; late Color primary30; late Color primary20; late Color primary15; late Color primary10;
@@ -65,9 +67,43 @@ class BlackYellowTheme extends BaseTheme {
 }
 
 ThemeData bmbDarkTheme() {
+  final TextTheme textTheme = bmbTextTheme();
+  const ColorScheme colorScheme = AppColors.bmbColorScheme;
   return ThemeData(
     useMaterial3: true,
-    colorScheme: AppColors.bmbColorScheme,
+    colorScheme: colorScheme,
+    textTheme: textTheme,
     scaffoldBackgroundColor: AppColors.greyDarkest,
+    appBarTheme: AppBarTheme(
+      backgroundColor: AppColors.greyDarkest,
+      foregroundColor: AppColors.white,
+      elevation: 0,
+      systemOverlayStyle: SystemUiOverlayStyle.light,
+      titleTextStyle: textTheme.titleLarge?.copyWith(color: AppColors.white),
+      iconTheme: const IconThemeData(color: AppColors.white),
+    ),
+    cardTheme: CardThemeData(
+      color: AppColors.greyDark,
+      elevation: 0,
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
+    ),
+    elevatedButtonTheme: ElevatedButtonThemeData(
+      style: ElevatedButton.styleFrom(
+        backgroundColor: AppColors.yellow,
+        foregroundColor: AppColors.black,
+        elevation: 0,
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+        textStyle: const TextStyle(fontWeight: FontWeight.w700),
+      ),
+    ),
+  );
+}
+
+ThemeData bmbLightTheme() {
+  const ColorScheme colorScheme = AppColors.bmbLightColorScheme;
+  return ThemeData(
+    useMaterial3: true,
+    colorScheme: colorScheme,
+    scaffoldBackgroundColor: AppColors.white,
   );
 }

@@ -1,41 +1,63 @@
-name: bmb_core
-description: Shared core package for BMB consumer and merchant Flutter apps. Provides networking, auth, storage, theme, and shared widgets. Borrowed from chefly_core strategy.
+name: chefly_core
+description: Shared core package for Chefly consumer (chefly_customer) and chef (chefly_cook) Flutter apps. Provides networking, auth, guest sessions, storage, theme, and shared widgets.
 version: 0.1.0
 publish_to: "none"
+
 environment:
   sdk: ">=3.4.0 <4.0.0"
   flutter: ">=3.22.0"
+
 dependencies:
   flutter:
     sdk: flutter
+
+  # Networking
   dio: ^5.7.0
   dio_smart_retry: ^7.0.1
+
+  # DI
   get_it: ^9.2.1
   injectable: ^3.0.0
+
+  # State (re-exported so apps don't pin separately)
   bloc: ^9.2.1
   flutter_bloc: ^9.1.1
   hydrated_bloc: ^11.0.0
   bloc_concurrency: ^0.3.0
+
+  # Models
   freezed_annotation: ^3.1.0
   json_annotation: ^4.9.0
   dartz: ^0.10.1
+
+  # Storage
   hive_ce: ^2.10.1
   hive_ce_flutter: ^2.1.0
   flutter_secure_storage: ^10.2.0
   path_provider: ^2.1.4
+
+  # Device / network
   device_info_plus: ^13.1.0
   connectivity_plus: ^7.1.1
   uuid: ^4.5.1
+
+  # Firebase (FCM + Crashlytics + Analytics ONLY — no Firebase Auth)
   firebase_core: ^4.9.0
   firebase_messaging: ^16.2.2
   firebase_crashlytics: ^5.2.2
+  # firebase_analytics: ^12.4.1  # TODO: restore after flutterfire configure
+
+  # UI primitives
   flutter_svg: ^2.0.10
   cached_network_image: ^3.4.1
   shimmer: ^3.0.0
   google_fonts: ^8.1.0
+
+  # Utilities
   logger: ^2.4.0
   intl: ^0.20.2
   flutter_multi_formatter: ^2.13.11
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -46,5 +68,6 @@ dev_dependencies:
   injectable_generator: ^3.0.2
   mocktail: ^1.0.4
   bloc_test: ^10.0.0
+
 flutter:
   uses-material-design: true
