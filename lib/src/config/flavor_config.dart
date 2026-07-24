@@ -6,8 +6,8 @@
 /// FlavorConfig.initialize(
 ///   FlavorConfig(
 ///     flavor: Flavor.staging,
-///     name: 'Chefly Staging',
-///     baseUrl: 'https://staging.chefly.co.ke',
+///     name: 'BMB Staging',
+///     baseUrl: 'https://staging.bmb.co.ke',
 ///     enableAnalytics: false,
 ///   ),
 /// );

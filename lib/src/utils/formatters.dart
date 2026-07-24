@@ -1,7 +1,7 @@
 import 'package:flutter_multi_formatter/flutter_multi_formatter.dart';
 import 'package:intl/intl.dart';
 
-/// Static display-formatting helpers used across the Chefly apps.
+/// Static display-formatting helpers used across the BMB apps.
 ///
 /// All methods are pure (no side effects) and safe to call from any isolate.
 abstract class AppFormatters {

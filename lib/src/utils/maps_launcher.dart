@@ -4,7 +4,7 @@
 /// the device's default maps application.
 ///
 /// ⚠️  **Launching requires the url_launcher package**, which is not yet in
-/// chefly_core/pubspec.yaml. Add it before calling launchQuery or
+/// bmb_core/pubspec.yaml. Add it before calling launchQuery or
 /// launchCoordinates, then uncomment the launch helpers below.
 ///
 /// Until then you can use [buildQueryUrl] and [buildCoordinatesUrl] to obtain

@@ -1,4 +1,4 @@
-import 'package:chefly_core/src/theme/app_colors.dart';
+import 'package:bmb_core/src/theme/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_multi_formatter/flutter_multi_formatter.dart';
 
@@ -12,8 +12,8 @@ import 'package:flutter_multi_formatter/flutter_multi_formatter.dart';
 /// [onSaved] is called with digits-only (stripped of spaces, dashes, and the
 /// `+` prefix). Pass [required] to choose between the strict vs. optional
 /// built-in validator, or supply your own via [validator].
-class CheflyPhoneField extends StatefulWidget {
-  const CheflyPhoneField({
+class BMBPhoneField extends StatefulWidget {
+  const BMBPhoneField({
     super.key,
     this.controller,
     this.label = 'Phone number',
@@ -59,10 +59,10 @@ class CheflyPhoneField extends StatefulWidget {
   final List<String>? fieldErrors;
 
   @override
-  State<CheflyPhoneField> createState() => _CheflyPhoneFieldState();
+  State<BMBPhoneField> createState() => _BMBPhoneFieldState();
 }
 
-class _CheflyPhoneFieldState extends State<CheflyPhoneField> {
+class _BMBPhoneFieldState extends State<BMBPhoneField> {
   late PhoneCountryData _selectedCountry;
   late final PhoneInputFormatter _formatter;
 

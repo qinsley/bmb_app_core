@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 
 import '../theme/app_spacing.dart';
 
-/// Button variants available in the Chefly design system.
-enum CheflyButtonVariant {
+/// Button variants available in the BMB design system.
+enum BMBButtonVariant {
   /// Green filled button — primary call-to-action.
   primary,
 
@@ -14,19 +14,19 @@ enum CheflyButtonVariant {
   text,
 }
 
-/// Chefly's standard button widget.
+/// BMB's standard button widget.
 ///
-/// Adapts to all three design-system button roles via [CheflyButtonVariant].
+/// Adapts to all three design-system button roles via [BMBButtonVariant].
 /// Pass `null` to [onPressed] to disable the button. Set [isLoading] to
 /// `true` to replace the content with a size-appropriate spinner and
 /// prevent taps while the action is in flight.
-class CheflyButton extends StatelessWidget {
-  /// Creates a [CheflyButton].
-  const CheflyButton({
+class BMBButton extends StatelessWidget {
+  /// Creates a [BMBButton].
+  const BMBButton({
     required this.label,
     required this.onPressed,
     super.key,
-    this.variant = CheflyButtonVariant.primary,
+    this.variant = BMBButtonVariant.primary,
     this.isLoading = false,
     this.leadingIcon,
     this.width,
@@ -39,8 +39,8 @@ class CheflyButton extends StatelessWidget {
   /// Invoked when the button is tapped. `null` renders the button disabled.
   final VoidCallback? onPressed;
 
-  /// Visual role. Defaults to [CheflyButtonVariant.primary].
-  final CheflyButtonVariant variant;
+  /// Visual role. Defaults to [BMBButtonVariant.primary].
+  final BMBButtonVariant variant;
 
   /// Replaces the content with a progress indicator and prevents taps.
   final bool isLoading;
@@ -63,17 +63,17 @@ class CheflyButton extends StatelessWidget {
     final ButtonStyle style = _style();
 
     final Widget button = switch (variant) {
-      CheflyButtonVariant.primary => ElevatedButton(
+      BMBButtonVariant.primary => ElevatedButton(
           onPressed: effectivePressed,
           style: style,
           child: content,
         ),
-      CheflyButtonVariant.secondary => OutlinedButton(
+      BMBButtonVariant.secondary => OutlinedButton(
           onPressed: effectivePressed,
           style: style,
           child: content,
         ),
-      CheflyButtonVariant.text => TextButton(
+      BMBButtonVariant.text => TextButton(
           onPressed: effectivePressed,
           style: style,
           child: content,
@@ -107,9 +107,9 @@ class CheflyButton extends StatelessWidget {
     if (isLoading) {
       final ColorScheme cs = Theme.of(context).colorScheme;
       final Color indicatorColor = switch (variant) {
-        CheflyButtonVariant.primary => cs.onPrimary,
-        CheflyButtonVariant.secondary ||
-        CheflyButtonVariant.text =>
+        BMBButtonVariant.primary => cs.onPrimary,
+        BMBButtonVariant.secondary ||
+        BMBButtonVariant.text =>
           cs.primary,
       };
       return SizedBox(

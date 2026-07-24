@@ -12,10 +12,10 @@ import '../theme/app_spacing.dart';
 ///   [onChanged] / [onSubmitted] as the user types.
 ///
 /// Styling is deliberately independent from [InputDecorationTheme] so the
-/// pill shape does not inherit the rectangular style used by `CheflyTextField`.
-class CheflySearchBar extends StatelessWidget {
-  /// Creates a [CheflySearchBar].
-  const CheflySearchBar({
+/// pill shape does not inherit the rectangular style used by `BMBTextField`.
+class BMBSearchBar extends StatelessWidget {
+  /// Creates a [BMBSearchBar].
+  const BMBSearchBar({
     super.key,
     this.hint = 'Search foods and kitchen',
     this.readOnly = true,

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
-/// A text form field that conforms to the Chefly design system.
+/// A text form field that conforms to the BMB design system.
 ///
 /// Styling comes entirely from [InputDecorationTheme] defined in
-/// `cheflyLightTheme` — no local style overrides are applied here.
+/// `bmbLightTheme` — no local style overrides are applied here.
 ///
 /// When [obscureText] is `true` the field automatically shows a
 /// show/hide toggle suffix icon regardless of [suffixIcon].
@@ -11,9 +11,9 @@ import 'package:flutter/material.dart';
 /// Server-side validation errors (from `ValidationFailure.fieldErrors`)
 /// can be passed via [fieldErrors]; they are joined with a newline and
 /// shown as [InputDecoration.errorText].
-class CheflyTextField extends StatefulWidget {
-  /// Creates a [CheflyTextField].
-  const CheflyTextField({
+class BMBTextField extends StatefulWidget {
+  /// Creates a [BMBTextField].
+  const BMBTextField({
     super.key,
     this.label,
     this.hint,
@@ -91,10 +91,10 @@ class CheflyTextField extends StatefulWidget {
   final bool autofocus;
 
   @override
-  State<CheflyTextField> createState() => _CheflyTextFieldState();
+  State<BMBTextField> createState() => _BMBTextFieldState();
 }
 
-class _CheflyTextFieldState extends State<CheflyTextField> {
+class _BMBTextFieldState extends State<BMBTextField> {
   // Starts obscured; toggled by the show/hide icon.
   bool _obscured = true;
 

@@ -14,9 +14,9 @@ import '../theme/app_colors.dart';
 ///
 /// An optional [borderColor] ring (e.g. [AppColors.primary] for verified
 /// chef badges) is drawn outside the image circle.
-class CheflyCircularImage extends StatelessWidget {
-  /// Creates a [CheflyCircularImage].
-  const CheflyCircularImage({
+class BMBCircularImage extends StatelessWidget {
+  /// Creates a [BMBCircularImage].
+  const BMBCircularImage({
     super.key,
     this.imageUrl,
     this.radius = 24,

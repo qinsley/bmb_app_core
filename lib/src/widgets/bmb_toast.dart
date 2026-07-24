@@ -6,16 +6,16 @@ import '../theme/app_spacing.dart';
 /// Toast severity levels.
 enum ToastType { success, error, warning, info }
 
-/// Typed SnackBar toasts with consistent Chefly styling.
+/// Typed SnackBar toasts with consistent BMB styling.
 ///
 /// Call anywhere you have a `BuildContext`:
 ///
 /// ```dart
-/// CheflyToast.show(context, 'Profile saved', type: ToastType.success);
-/// CheflyToast.show(context, 'Something went wrong', type: ToastType.error);
+/// BMBToast.show(context, 'Profile saved', type: ToastType.success);
+/// BMBToast.show(context, 'Something went wrong', type: ToastType.error);
 /// ```
-abstract class CheflyToast {
-  CheflyToast._();
+abstract class BMBToast {
+  BMBToast._();
 
   /// Shows a [SnackBar] with the given [message] styled by [type].
   ///

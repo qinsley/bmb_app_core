@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-/// Returns the Chefly [TextTheme].
+/// Returns the BMB [TextTheme].
 ///
 /// Merriweather (via [GoogleFonts]) provides the base shapes.  We override
 /// font weights to follow the design system:
@@ -14,9 +14,9 @@ import 'package:google_fonts/google_fonts.dart';
 /// | Body          | 400    |
 /// | Label         | 500    |
 ///
-/// Call this function once inside `cheflyLightTheme` — do not call it in
+/// Call this function once inside `bmbLightTheme` — do not call it in
 /// widget build methods (it allocates on every call).
-TextTheme cheflyTextTheme() {
+TextTheme bmbTextTheme() {
   final TextTheme base = GoogleFonts.merriweatherTextTheme();
 
   return base.copyWith(

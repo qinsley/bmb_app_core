@@ -15,7 +15,7 @@ import '../storage/secure_storage.dart';
 
 // ignore_for_file: avoid_unused_imports — re-exported via barrel
 
-/// Injectable module that wires up all `chefly_core` singletons.
+/// Injectable module that wires up all `bmb_core` singletons.
 ///
 /// Consuming apps must call `configureDependencies` (from `injection.dart`)
 /// **after** `FlavorConfig.initialize` and Firebase initialization, but

@@ -2,11 +2,11 @@
 /// hardcoded in multiple datasources (a real source of bugs in the
 /// previous codebase).
 abstract class TbBoxes {
-  static const cart = 'chefly.cart';
-  static const user = 'chefly.user';
-  static const cook = 'chefly.cook';
-  static const settings = 'chefly.settings';
-  static const cachedFeed = 'chefly.cached_feed';
+  static const cart = 'bmb.cart';
+  static const user = 'bmb.user';
+  static const cook = 'bmb.cook';
+  static const settings = 'bmb.settings';
+  static const cachedFeed = 'bmb.cached_feed';
 }
 
 /// Common key constants within boxes.

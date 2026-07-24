@@ -1,7 +1,7 @@
-/// Spatial scale and border-radius tokens for Chefly.
+/// Spatial scale and border-radius tokens for BMB.
 ///
 /// **Rule:** No raw numeric literals for spacing or radii are allowed anywhere
-/// else in `chefly_core` or the consumer apps.  Every layout value must
+/// else in `bmb_core` or the consumer apps.  Every layout value must
 /// reference a constant defined here, e.g. `AppSpacing.md` or
 /// `AppRadius.card`.
 ///
@@ -52,7 +52,7 @@ abstract class AppSpacing {
   static const double listItemGap = sm;
 }
 
-/// Border-radius tokens for Chefly.
+/// Border-radius tokens for BMB.
 ///
 /// Always reference these constants instead of `BorderRadius.circular(<number>)`.
 abstract class AppRadius {

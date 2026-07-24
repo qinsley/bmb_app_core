@@ -1,5 +1,5 @@
-import 'package:chefly_core/src/theme/app_colors.dart';
-import 'package:chefly_core/src/utils/formatters.dart';
+import 'package:bmb_core/src/theme/app_colors.dart';
+import 'package:bmb_core/src/utils/formatters.dart';
 import 'package:flutter/material.dart';
 
 /// A read-only text widget that displays a monetary amount in Kenyan Shillings.
@@ -7,8 +7,8 @@ import 'package:flutter/material.dart';
 /// Formats the value using `AppFormatters.ksh` (or `AppFormatters.kshCompact`
 /// when [compact] is `true`). Styling defaults to a bold, primary-coloured
 /// `bodyLarge` but can be overridden via [style] and [color].
-class CheflyMoneyDisplay extends StatelessWidget {
-  const CheflyMoneyDisplay({
+class BMBMoneyDisplay extends StatelessWidget {
+  const BMBMoneyDisplay({
     super.key,
     required this.amount,
     this.style,

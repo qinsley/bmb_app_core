@@ -1,5 +1,5 @@
-// String utility extensions used across chefly_core and consuming apps.
-// Import via chefly_core.dart — do not import this file directly.
+// String utility extensions used across bmb_core and consuming apps.
+// Import via bmb_core.dart — do not import this file directly.
 
 // ---------------------------------------------------------------------------
 // Non-nullable

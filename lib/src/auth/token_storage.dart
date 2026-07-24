@@ -17,8 +17,8 @@ class TokenStorage {
   final FlutterSecureStorage _storage;
   final _controller = StreamController<TokenChange>.broadcast();
 
-  static const _accessKey = 'chefly.auth.access_token';
-  static const _refreshKey = 'chefly.auth.refresh_token';
+  static const _accessKey = 'bmb.auth.access_token';
+  static const _refreshKey = 'bmb.auth.refresh_token';
 
   /// Emits whenever tokens are written or cleared. Useful for reacting
   /// to logout from anywhere in the app.

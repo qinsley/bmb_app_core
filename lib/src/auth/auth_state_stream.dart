@@ -20,7 +20,7 @@ enum AuthStatus {
 ///   - `TokenStorage` when tokens are written/cleared
 ///   - The app's auth feature when guest → user transitions happen
 ///
-/// `chefly_core` provides the stream; the app decides when to emit.
+/// `bmb_core` provides the stream; the app decides when to emit.
 class AuthStateStream {
   final _controller = StreamController<AuthStatus>.broadcast();
   AuthStatus _current = AuthStatus.unknown;

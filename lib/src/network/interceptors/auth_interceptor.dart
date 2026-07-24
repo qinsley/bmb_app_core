@@ -11,7 +11,7 @@ import '../../utils/logger.dart';
 ///   3. On refresh failure, clears tokens and emits `onLogout()` so the app
 ///      can navigate to the login screen.
 ///
-/// The refresh endpoint is configurable since `chefly_core` doesn't own
+/// The refresh endpoint is configurable since `bmb_core` doesn't own
 /// the auth feature — the consuming app wires its own endpoint path and
 /// payload shape.
 class AuthInterceptor extends Interceptor {

@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 
 import '../theme/app_colors.dart';
 import '../theme/app_spacing.dart';
-import 'chefly_button.dart';
+import 'bmb_button.dart';
 
 /// Full-area centered error state with an icon, message, and optional retry.
 ///
 /// Use this whenever a data-fetch or action fails. If [retryLabel] and
-/// [onRetry] are provided a [CheflyButton] text-variant appears below the
+/// [onRetry] are provided a [BMBButton] text-variant appears below the
 /// message so the user can attempt the action again.
 class ErrorState extends StatelessWidget {
   /// Creates an [ErrorState].
@@ -68,10 +68,10 @@ class ErrorState extends StatelessWidget {
             ),
             if (retry != null) ...[
               const SizedBox(height: AppSpacing.lg),
-              CheflyButton(
+              BMBButton(
                 label: retry,
                 onPressed: onRetry,
-                variant: CheflyButtonVariant.text,
+                variant: BMBButtonVariant.text,
               ),
             ],
           ],

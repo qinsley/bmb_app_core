@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import '../theme/app_colors.dart';
 import '../theme/app_spacing.dart';
 
-/// Convenience wrappers for `showModalBottomSheet` with consistent Chefly
+/// Convenience wrappers for `showModalBottomSheet` with consistent BMB
 /// styling: rounded top corners, a drag handle, and standard padding.
 ///
 /// Three size variants:
@@ -12,14 +12,14 @@ import '../theme/app_spacing.dart';
 /// - **tall**     — 90 % of screen height (for complex pickers / forms)
 ///
 /// ```dart
-/// CheflySheets.flexible(
+/// BMBSheets.flexible(
 ///   context,
 ///   title: 'Filter options',
 ///   child: FilterPanel(),
 /// );
 /// ```
-abstract class CheflySheets {
-  CheflySheets._();
+abstract class BMBSheets {
+  BMBSheets._();
 
   // ── Public entry points ───────────────────────────────────────────────────
 

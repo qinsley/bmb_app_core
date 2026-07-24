@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 
 import '../theme/app_colors.dart';
 import '../theme/app_spacing.dart';
-import 'chefly_button.dart';
+import 'bmb_button.dart';
 
 /// Full-area centered empty state with an icon, title, subtitle, and optional
 /// primary action button.
 ///
 /// Use this when a list or data region has no items to display. If
 /// [actionLabel] and [onAction] are both provided a full-width
-/// [CheflyButton] primary variant appears below the subtitle.
+/// [BMBButton] primary variant appears below the subtitle.
 class EmptyState extends StatelessWidget {
   /// Creates an [EmptyState].
   const EmptyState({
@@ -66,7 +66,7 @@ class EmptyState extends StatelessWidget {
             ),
             if (label != null) ...[
               const SizedBox(height: AppSpacing.xl),
-              CheflyButton(
+              BMBButton(
                 label: label,
                 onPressed: onAction,
               ),
